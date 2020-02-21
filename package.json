@@ -1,0 +1,27 @@
+{
+  "name": "sinuous-bind",
+  "version": "0.0.1",
+  "description": "Give your Sinuous app Svelte-like bindings!",
+  "main": "./src/index.js",
+  "keywords": [
+    "sinuous",
+    "reactive",
+    "functional",
+    "form",
+    "ui"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "rollup -c"
+  },
+  "homepage": "https://github.com/theSherwood/sinuous-bind",
+  "author": "Adam Sherwood <adam.the.sherwood@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "sinuous": "^0.24.0"
+  },
+  "devDependencies": {
+    "rollup": "^1.31.0",
+    "rollup-plugin-terser": "^5.2.0"
+  }
+}
