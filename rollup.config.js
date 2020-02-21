@@ -2,7 +2,7 @@ import { terser } from "rollup-plugin-terser";
 
 export default [
   {
-    input: "./src/cdn/bind.js",
+    input: "./src/bind.js",
     output: [
       {
         file: "dist/bind.min.js",
@@ -14,7 +14,7 @@ export default [
     ]
   },
   {
-    input: "./src/cdn/bindArea.js",
+    input: "./src/bindArea.js",
     output: [
       {
         file: "dist/bindArea.min.js",
@@ -26,7 +26,7 @@ export default [
     ]
   },
   {
-    input: "./src/cdn/bindGroup.js",
+    input: "./src/bindGroup.js",
     output: [
       {
         file: "dist/bindGroup.min.js",
@@ -38,7 +38,7 @@ export default [
     ]
   },
   {
-    input: "./src/cdn/bindMedia.js",
+    input: "./src/bindMedia.js",
     output: [
       {
         file: "dist/bindMedia.min.js",
@@ -50,7 +50,7 @@ export default [
     ]
   },
   {
-    input: "./src/cdn/all.js",
+    input: "./src/all.js",
     output: [
       {
         file: "dist/all.min.js",
