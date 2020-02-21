@@ -54,7 +54,7 @@ export default [
     output: [
       {
         file: "dist/all.min.js",
-        name: "all",
+        name: "bindAll",
         format: "iife",
         compact: true,
         plugins: [terser()]

@@ -57,18 +57,6 @@ export function bindGroup(el, value, ...args) {
         value.value = binding;
         value["oninput"] = e => binding(asNumber(e.target.value));
       }
-    } else if (value.contentEditable) {
-      let binding = Array.isArray(value["bind:group"])
-        ? value["bind:group"]
-        : [value["bind:group"]];
-      let property = binding[1] || "textContent";
-      subscribe(() => {
-        let newContent = binding[0]();
-        if (el[property] != newContent) {
-          el[property] = newContent;
-        }
-      });
-      value[binding[2] || "oninput"] = e => binding[0](e.target[property]);
     } else if (el.nodeName === "INPUT" && value.type === "radio") {
       subscribe(() =>
         value.value == binding() ? (el.checked = true) : (el.checked = false)
