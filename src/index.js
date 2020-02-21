@@ -1,4 +1,4 @@
-export * from './bind'
-export * from './bindArea'
-export * from './bindGroup'
-export * from './bindMedia'
+import "./bind";
+import "./bindArea";
+import "./bindGroup";
+import "./bindMedia";
