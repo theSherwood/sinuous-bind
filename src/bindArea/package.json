@@ -1,0 +1,8 @@
+{
+  "name": "sinuous-bind-bindArea",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "peerDependencies": {
+    "sinuous": "^0.24.0"
+  }
+}
