@@ -88,7 +88,7 @@ You must also bring in [Sinuous](https://github.com/luwes/sinuous):
 <script src="https://unpkg.com/sinuous/dist/all.js"></script>
 ```
 
-### Setup
+#### Setup
 
 If you have brought in `sinuous-bind/dist/all.min.js`, setup is something like what follows:
 
