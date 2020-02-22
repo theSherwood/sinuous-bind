@@ -1,12 +1,12 @@
 // For setting up a cdn with all the directives
 
-import {enableBind, registerProperty} from './bind'
-import {bindArea} from './bindArea'
-import {bindGroup} from './bindGroup'
-import {bindMedia} from './bindMedia'
+import {enableBind, register} from './bind'
+import {getBindArea} from './bindArea'
+import {getBindGroup} from './bindGroup'
+import {getBindMedia} from './bindMedia'
 
-registerProperty(bindArea)
-registerProperty(bindGroup)
-registerProperty(bindMedia)
+register(getBindArea)
+register(getBindGroup)
+register(getBindMedia)
 
 export {enableBind}

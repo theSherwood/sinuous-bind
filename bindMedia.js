@@ -1,4 +1,4 @@
-import { bindMedia } from "./src/bindMedia";
-import { registerProperty } from "./src/registry";
+import { getBindMedia } from "./src/bindMedia";
+import { register } from "./src/registry";
 
-registerProperty(bindMedia);
+register(getBindMedia);

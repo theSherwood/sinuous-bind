@@ -1,4 +1,4 @@
-import {bind} from './src/bind'
-import {registerProperty} from './src/registry'
+import { getBind } from "./src/bind";
+import { register } from "./src/registry";
 
-registerProperty(bind)
+register(getBind);

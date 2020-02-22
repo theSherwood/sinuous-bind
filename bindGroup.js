@@ -1,4 +1,4 @@
-import { bindGroup } from "./src/bindGroup";
-import { registerProperty } from "./src/registry";
+import { getBindGroup } from "./src/bindGroup";
+import { register } from "./src/registry";
 
-registerProperty(bindGroup);
+register(getBindGroup);

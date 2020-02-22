@@ -1,6 +1,6 @@
 {
   "name": "sinuous-bind",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Give your Sinuous app Svelte-like bindings!",
   "main": "./index.js",
   "keywords": [

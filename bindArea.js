@@ -1,4 +1,4 @@
-import { bindArea } from "./src/bindArea";
-import { registerProperty } from "./src/registry";
+import { getBindArea } from "./src/bindArea";
+import { register } from "./src/registry";
 
-registerProperty(bindArea);
+register(getBindArea);

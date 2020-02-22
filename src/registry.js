@@ -1,4 +1,5 @@
 import { api } from "sinuous";
+import { subscribe } from 'sinuous/observable';
 
 const pipe = (f, g) => (...args) => g(...f(...args));
 
@@ -17,10 +18,10 @@ function registryWrap(el, value, ...args) {
   return [el, value, ...args];
 }
 
-export function registerProperty(propHandler) {
+export function register(getProp) {
   if (registry.property === identity) {
-    registry.property = propHandler;
+    registry.property = getProp({subscribe});
   } else {
-    registry.property = pipe(propHandler, registry.property);
+    registry.property = pipe(getProp({subscribe}), registry.property);
   }
 }
